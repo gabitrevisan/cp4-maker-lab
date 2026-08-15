@@ -76,6 +76,20 @@
 
 ---
 
+## 🛠️ Lista de Componentes - Medidas (BOM)
+
+| Componente | Comprimento | Largura | Altura | Forma de Fixação |
+| :--- | :---: | :---: | :---: | :--- |
+| **Motor Esquerdo** | 6,9 | 3,55 | 2,1 | Parafuso |
+| **Motor Direito** | 6,10 | 3,56 | 2,2 | Parafuso |
+| **Arduino** | 6,9 | 5,09 | 1,1 | Parafuso |
+| **Ponte H** | 4,15 | 4,15 | 2,7 | Encaixe |
+| **Bateria** | 7,5 | 4,0 | 1,6 | Parafuso |
+| **Sensor** | 4,5 | 2,5 | 1,6 | Encaixe |
+
+---
+
+
 ## 📅 Roadmap de Desenvolvimento
 - [x] Definição de requisitos, dimensões e arquitetura eletrônica
 - [x] Elaboração dos croquis digitais do chassi e carenagem
