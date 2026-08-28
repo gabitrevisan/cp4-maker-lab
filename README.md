@@ -52,11 +52,11 @@
 
 ### 1. Vista Superior — Disposição dos Componentes e Encaixes
 *Visualize o Croqui Chassi Superior no link abaixo*
-![Croqui Chassi Superior](docs/croqui-chassi-superior.png)
+![Croqui Chassi Superior](docs/croqui-chassi-superior.jpg)
 
 ### 2. Vista Isométrica / Modelo com Carenagem
 *Visualize o Croqui Carenagem Superior no link abaixo*
-![Croqui Carenagem](docs/croqui-carenagem.png)
+![Croqui Carenagem](docs/croqui-carenagem.jpg)
 
 ---
 
