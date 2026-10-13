@@ -9,6 +9,19 @@
 
 ---
 
+## Evolução do Projeto: Check Point 02 (TinyML)
+
+No Check Point 02, o carrinho-robô evoluiu de um projeto de hardware tradicional para uma aplicação com inteligência embarcada (TinyML) utilizando a plataforma **Edge Impulse** e o microcontrolador **ESP32**.
+
+### Principais Adições no CP2:
+* **Módulo TinyML (`/tinyml`):** Documentação completa da coleta de dados, pipeline do Edge Impulse e arquivos CSV brutos.
+* **Biblioteca Embarcada (`/tinyml/lib`):** Código C++ gerado e quantizado do modelo para execução local offline no ESP32.
+* **Código de Controle (`/src/codigo.ino`):** Atualizado para integrar a inferência do modelo em tempo real e alterar o comportamento dos motores (Ponte H) com base na classificação de distância.
+
+Para consultar a documentação detalhada do modelo, acurácia, matriz de confusão e histórico de coleta, acesse a pasta **[`/tinyml`](./tinyml)**.
+
+---
+
 ## 📋 Ficha de Requisitos Técnicos
 
 ### 1. Dimensões e Estrutura Esperadas
