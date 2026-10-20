@@ -1,0 +1,57 @@
+# ==========================================
+# Ficheiros e Pastas de Compilação do VS Code & C++
+# ==========================================
+.vscode/ipch/
+.vscode/*.upload.json
+.vscode/launch.json
+*.o
+*.elf
+*.bin
+*.hex
+*.out
+
+# ==========================================
+# PlatformIO / Arduino IDE (Ficheiros Temporários)
+# ==========================================
+.pio/
+.pioenvs/
+.piolibdeps/
+build/
+Output/
+*.ino.cpp
+*.ino.hex
+
+# ==========================================
+# Ficheiros de Sistema Operativo
+# ==========================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+Desktop.ini
+
+# Linux
+*~
+
+# ==========================================
+# Ficheiros Temporários de Editores e Logs
+# ==========================================
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
+
+# ==========================================
+# REGRAS DO TINYML / EDGE IMPULSE (Exceções)
+# ==========================================
+# Garante que a pasta tinyml e todo o seu conteúdo (lib, dataset, edge_impulse)
+# sejam explicitamente incluídos no Git.
+!tinyml/
+!tinyml/**
