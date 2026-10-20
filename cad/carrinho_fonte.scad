@@ -69,5 +69,31 @@ module carenagem_funcional() {
     }
 }
 
+// cad/carrinho_fonte.scad
+
+// --- Parâmetros Gerais ---
+chassi_comprimento = 150;
+chassi_largura = 100;
+espessura = 3;
+raio_furo_motor = 1.5;
+
+module chassi_base() {
+    difference() {
+        // Base do carrinho
+        cube([chassi_comprimento, chassi_largura, espessura], center = true);
+        
+        // Furações de fixação dos motores
+        translate([30, 40, 0]) cylinder(h = espessura + 2, r = raio_furo_motor, center = true, $fn=20);
+        translate([30, -40, 0]) cylinder(h = espessura + 2, r = raio_furo_motor, center = true, $fn=20);
+        translate([-30, 40, 0]) cylinder(h = espessura + 2, r = raio_furo_motor, center = true, $fn=20);
+        translate([-30, -40, 0]) cylinder(h = espessura + 2, r = raio_furo_motor, center = true, $fn=20);
+        
+        // Recorte para passagem de fiação
+        translate([0, 0, 0]) cube([20, 40, espessura + 2], center = true);
+    }
+}
+
 // Renderiza a peça final
 carenagem_funcional();
+
+chassi_base();

@@ -1,8 +1,15 @@
-# Arquitetura Eletrônica e Diagrama de Blocos
+# Arquitetura do Sistema
 
-A organização do hardware e o fluxo de alimentação do carrinho-robô seguem a seguinte arquitetura técnica:
+## Mapeamento de Pinos (Pinout)
 
-* **Alimentação:** A energia flui inicialmente da Bateria para a Chave (liga/desliga).
-* **Distribuição de Potência:** A partir da chave, a tensão é direcionada simultaneamente para a Ponte H e para o regulador de tensão do ESP32.
-* **Controle:** A placa controladora ESP32 processa as instruções enviadas pelo módulo Bluetooth e gerencia a telemetria do Sensor Ultrassônico.
-* **Atuação:** A placa controladora envia os sinais lógicos para a Ponte H, que por sua vez aciona e controla a direção e velocidade dos Motores.
+| Componente | Pino do Componente | Pino do Microcontrolador (Arduino/ESP32) |
+| :--- | :--- | :--- |
+| **Driver Ponte H** | IN1 | D2 |
+| **Driver Ponte H** | IN2 | D3 |
+| **Driver Ponte H** | IN3 | D4 |
+| **Driver Ponte H** | IN4 | D5 |
+| **Driver Ponte H** | ENA (PWM) | D6 |
+| **Driver Ponte H** | ENB (PWM) | D9 |
+| **Sensor HC-SR04** | Trigger | D12 |
+| **Sensor HC-SR04** | Echo | D13 |
+| **Alimentação** | VCC / GND | 5V / GND |
