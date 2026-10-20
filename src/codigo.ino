@@ -1,7 +1,8 @@
 // src/codigo.ino
 
 #include <Arduino.h>
-// Substitua pelo nome exato da biblioteca gerada pelo Edge Impulse
+
+// nome exato da biblioteca gerada pelo Edge Impulse
 #include <carrinho-tinyml_inferencing.h>
 
 // Definição dos pinos dos motores (Ponte H)
