@@ -6,16 +6,16 @@
 #include <carrinho-tinyml_inferencing.h>
 
 // Definição dos pinos dos motores (Ponte H)
-#define IN1 2
-#define IN2 3
-#define IN3 4
-#define IN4 5
-#define ENA 6
-#define ENB 9
+#define IN1 32
+#define IN2 33
+#define IN3 25
+#define IN4 26
+// #define ENA 6
+// #define ENB 9
 
 // Definição dos pinos do Sensor Ultrassônico
-#define TRIG_PIN 12
-#define ECHO_PIN 13
+#define TRIG_PIN 22
+#define ECHO_PIN 23
 
 // Buffer para o TinyML
 static float features[EI_CLASSIFIER_DSP_INPUT_FRAME_SIZE];
@@ -28,8 +28,8 @@ void setup() {
     pinMode(IN2, OUTPUT);
     pinMode(IN3, OUTPUT);
     pinMode(IN4, OUTPUT);
-    pinMode(ENA, OUTPUT);
-    pinMode(ENB, OUTPUT);
+    // pinMode(ENA, OUTPUT);
+    // pinMode(ENB, OUTPUT);
     
     pinMode(TRIG_PIN, OUTPUT);
     pinMode(ECHO_PIN, INPUT);
@@ -51,8 +51,8 @@ float lerDistancia() {
 }
 
 void moverFrente(uint8_t velocidade) {
-    analogWrite(ENA, velocidade);
-    analogWrite(ENB, velocidade);
+    // analogWrite(ENA, velocidade);
+    // analogWrite(ENB, velocidade);
     digitalWrite(IN1, HIGH);
     digitalWrite(IN2, LOW);
     digitalWrite(IN3, HIGH);
@@ -68,8 +68,8 @@ void parar() {
 
 void desviar() {
     // Exemplo simples de curva para a direita
-    analogWrite(ENA, 150);
-    analogWrite(ENB, 150);
+    // analogWrite(ENA, 150);
+    // analogWrite(ENB, 150);
     digitalWrite(IN1, HIGH);
     digitalWrite(IN2, LOW);
     digitalWrite(IN3, LOW);
